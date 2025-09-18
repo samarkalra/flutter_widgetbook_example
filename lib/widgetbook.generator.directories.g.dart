@@ -69,13 +69,15 @@ final directories = <_widgetbook.WidgetbookNode>[
         useCases: [
           _widgetbook.WidgetbookUseCase(
             name: 'Default Style',
-            builder: _full_example_components_custom_text_field
-                .defaultCustomTextField,
+            builder:
+                _full_example_components_custom_text_field
+                    .defaultCustomTextField,
           ),
           _widgetbook.WidgetbookUseCase(
             name: 'With Hint Text',
-            builder: _full_example_components_custom_text_field
-                .hintTextCustomTextField,
+            builder:
+                _full_example_components_custom_text_field
+                    .hintTextCustomTextField,
           ),
         ],
       ),
