@@ -24,11 +24,11 @@ jobs:
       - name: Run build runner
         run: dart run build_runner build -d
 
-      - name: Build Website
+      - name: Build Widgetbook Web
         run: flutter build web -t lib/widgetbook.generator.dart
 
       - name: Install Widgetbook CLI
         run: dart pub global activate widgetbook_cli
 
-      - name: Push Build
+      - name: Push Widgetbook Build
         run: widgetbook cloud build push --api-key ${{ secrets.WIDGETBOOK_CLOUD_API_KEY }}
