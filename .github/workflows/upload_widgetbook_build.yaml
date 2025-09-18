@@ -20,7 +20,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-        channel: stable
+          channel: stable
 
       - name: Install Melos
         run: flutter pub global activate melos
